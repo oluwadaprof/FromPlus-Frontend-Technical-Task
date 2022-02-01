@@ -12,12 +12,33 @@ function NavBar() {
       <div className="sort-container">
         <p>Sort by:</p>
         <div className="input-grid">
-          <label>Category</label>
-          <select className="category-input-box">
-            <option value="">Grapefruit</option>
-            <option value="">Grape</option>
-            <option value="">orange</option>
-          </select>
+          <div className="category-container">
+            <label>Category</label>
+            <select className="category-input-box">
+              <option value="">Grapefruit</option>
+              <option value="">Grape</option>
+              <option value="">orange</option>
+            </select>
+          </div>
+
+          <div className="category-container">
+            <label>Order</label>
+            <select className="category-input-box">
+              <option value="">Default</option>
+              <option value="">Grape</option>
+              <option value="">orange</option>
+            </select>
+          </div>
+         
+          <div className="category-container">
+            <label>Date</label>
+            <select className="category-input-box">
+              <option value="">Default</option>
+              <option value="">Grape</option>
+              <option value="">orange</option>
+            </select>
+          </div>
+         
     
           {/* <div className="category-container">
             <input className="category-input-box" />
