@@ -1,6 +1,9 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 
 function TemplateCard() {
+    // const templates = useSelector((state) => state.setTemplates.templates);
+
   return (
   <div className='template-card'>
       <p className='template-card-title'>Alumni Membership Form<br /> Template</p>
