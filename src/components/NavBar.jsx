@@ -14,8 +14,8 @@ function NavBar() {
         <div className="input-grid">
           <div className="category-container">
             <label>Category</label>
-            <select className="category-input-box">
-              <option value="">Grapefruit</option>
+            <select  className="category-input-box">
+              <option id='#ddlProducts' value="">Grapefruit</option>
               <option value="">Grape</option>
               <option value="">orange</option>
             </select>
