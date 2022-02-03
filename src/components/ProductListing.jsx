@@ -1,8 +1,9 @@
 import axios from "axios";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import TemplateCard from "./TemplateCard";
+import TemplateCard from './TemplateCard';
 import { setTemplates } from "../redux/action/templateActions";
+
 
 function ProductListing() {
   const templates = useSelector((state) => state);
@@ -19,21 +20,21 @@ function ProductListing() {
 
   useEffect(() => {
     FetchTemplates();
-  }, []);
+  }, );
 
   console.log("templates:", templates);
 
   return (
     <div className='product-list-container'>
       <TemplateCard />
+      {/* <TemplateCard />
       <TemplateCard />
       <TemplateCard />
       <TemplateCard />
       <TemplateCard />
       <TemplateCard />
       <TemplateCard />
-      <TemplateCard />
-      <TemplateCard />
+      <TemplateCard /> */}
     </div>
   );
 }
