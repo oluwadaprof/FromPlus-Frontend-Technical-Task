@@ -16,17 +16,20 @@ function ProductListing() {
         console.log("Err", err);
       });
     dispatch(setTemplates(response.data));
+    // const dataLength = (setTemplates(response.data.length))
+    
   };
 
   useEffect(() => {
     FetchTemplates();
+    
   }, );
 
   console.log("templates:", templates);
 
   return (
     <div className='product-list-container'>
-      <TemplateCard />
+      <TemplateCard  />
       {/* <TemplateCard />
       <TemplateCard />
       <TemplateCard />
