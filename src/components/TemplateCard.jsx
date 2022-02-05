@@ -6,13 +6,16 @@ import { useSelector } from "react-redux";
 function TemplateCard  ()  {
   const templates = useSelector((state) => state.allTemplates.templates);
   const templateLength= useSelector((state) =>state.allTemplates.templates.length);
-   const firstArray = templates[0];
-   console.log('firstArray:',firstArray);
+
+  const range = templates.slice(0,10);
+  console.log('firstArray:',range);
+
+  
 
 
 
 
-  const renderTemplateList = templates.map((template, index) => {
+  const renderTemplateList = range.map((template, index) => {
     const {    name, description } = template;
     return (
       <div className='template-card' key={index} >

@@ -199,6 +199,36 @@
         display: grid;
         grid-template-columns: 200px 200px 200px;
         grid-gap: 210px;
-        grid-template-rows: 160px 160px 160px;
-        height: 1000em;
+        grid-template-rows: 160px 160px 160px 160PX;
+        height: 150em;
+    }
+    /* pagination container */
+    
+    .pagination-container {
+        display: grid;
+        grid-template-columns: 150px 150px 150px;
+        grid-gap: 29em;
+        position: relative;
+        top: -6em;
+        left: 8em;
+    }
+    
+    .button-flex {
+        display: inline-flex;
+        flex-direction: row;
+    }
+    
+    .button-one {
+        width: 4.5em;
+        height: 3em;
+        margin-right: .5em;
+        margin-top: -.6em;
+        background: none;
+        border: 1px solid gray;
+        border-radius: 3px;
+    }
+    
+    .pagination-text {
+        font-weight: 500;
+        cursor: pointer;
     }

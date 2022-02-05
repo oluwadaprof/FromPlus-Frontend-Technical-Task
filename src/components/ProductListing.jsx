@@ -23,21 +23,14 @@ function ProductListing() {
   useEffect(() => {
     FetchTemplates();
     
-  }, );
+  },[]);
 
   console.log("templates:", templates);
 
   return (
     <div className='product-list-container'>
       <TemplateCard  />
-      {/* <TemplateCard />
-      <TemplateCard />
-      <TemplateCard />
-      <TemplateCard />
-      <TemplateCard />
-      <TemplateCard />
-      <TemplateCard />
-      <TemplateCard /> */}
+     
     </div>
   );
 }
