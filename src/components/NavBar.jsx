@@ -1,22 +1,22 @@
-import React, {useState} from "react";
-import {useSelector} from 'react-redux'
+import React from "react";
+// import {useSelector} from 'react-redux'
 import { RiSearchLine } from "react-icons/ri";
-import templateSearch from "../redux/utils/templateSearch";
-import useTemplateSearch from "../redux/utils/templateSearch";
+// import templateSearch from "../redux/utils/templateSearch";
+// import useTemplateSearch from "../redux/utils/templateSearch";
 // import useState from 'react'
 
 
 function NavBar () {
-  const templates = useSelector((state) => state.allTemplates.templates);
-  const [query, setQuery] = useState('')
-  const [pageNUmber, setPageNumber] = useState(1)
+  // const templates = useSelector((state) => state.allTemplates.templates);
+  // const [query, setQuery] = useState('')
+  // const [pageNUmber, setPageNumber] = useState(1)
 
 //  const {template, hasMore, loading, error} = useTemplateSearch(query, pageNUmber);
 
-  function handleSearch(e){
-    setQuery(e.target.value)
-    setPageNumber(1)
-  }
+  // function handleSearch(e){
+  //   setQuery(e.target.value)
+  //   setPageNumber(1)
+  // }
   // const [inputValue, setInputValue] = useState("");
 
   // function handleSearch(e) {
@@ -32,7 +32,7 @@ function NavBar () {
   return (
     <nav>
       <div className="search-container">
-        <input className='search-input' onChange={handleSearch}  placeholder='Search Templates' />
+        <input className='search-input'   placeholder='Search Templates' />
         <RiSearchLine className='search-icon' />
       </div>
       <div className="sort-container">

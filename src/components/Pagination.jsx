@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 
 const Pagination = ({ templatesPerPage, totalTemplate, paginate }) => {
   const templates = useSelector((state) => state.allTemplates.templates);
-  const range = templates.slice(0, 15);
+  // const range = templates.slice(0, 15);
   console.log("all-data:", templates);
 
   // const pageNumbers = [];
