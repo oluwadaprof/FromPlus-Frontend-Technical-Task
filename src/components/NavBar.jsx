@@ -41,27 +41,27 @@ function NavBar () {
           <div className="category-container">
             <label>Category</label>
             <select  className="category-input-box">
-              <option id='#ddlProducts' value="health">Grapefruit</option>
-              <option value="e-commerce">Grape</option>
-              <option value="education">orange</option>
+              <option id='#ddlProducts' value="health">Health</option>
+              <option value="e-commerce">E-commerce</option>
+              <option value="education">Education</option>
             </select>
           </div>
 
           <div className="category-container">
             <label>Order</label>
             <select  className="category-input-box">
-              <option value="health">Default</option>
-              <option value="e-commerce">Grape</option>
-              <option value="education">orange</option>
+              <option value="health">Health</option>
+              <option value="e-commerce">E-commerce</option>
+              <option value="education">Education</option>
             </select>
           </div>
          
           <div className="category-container">
             <label>Date</label>
             <select className="category-input-box">
-              <option value="health">Default</option>
-              <option value="e-commerce">Grape</option>
-              <option value="education">orange</option>
+              <option value="health">Health</option>
+              <option value="e-commerce">E-commerce</option>
+              <option value="education">Education</option>
             </select>
           </div>
          
