@@ -157,6 +157,12 @@
     }
     /* template-card */
     
+    .loading-text {
+        margin-top: 3em;
+        margin-left: 7.5em;
+        font-weight: bold;
+    }
+    
     .template-card {
         width: 25em;
         height: 20em;
@@ -193,6 +199,7 @@
         margin-left: 2em;
         margin-top: .7em;
         font-weight: 400;
+        cursor: pointer;
     }
     
     .product-list-container {
@@ -231,4 +238,151 @@
     .pagination-text {
         font-weight: 500;
         cursor: pointer;
+    }
+    
+    @media screen and (max-width: 480px) {
+        /* * {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        } */
+        .search-container {
+            width: 45em;
+            height: 2em;
+            max-width: 39em;
+            transform: scale(0.8);
+        }
+        .search-input {
+            width: 38em;
+            height: 3.9em;
+            margin-top: 7em;
+            margin-left: 1.8em;
+            border: 1px solid #BDBDBD;
+            border-radius: 2px;
+        }
+        .search-icon {
+            position: relative;
+            top: -1.5em;
+            left: 8.6em;
+            font-size: 1.6em;
+            color: gray;
+        }
+        .sort-container {
+            top: 4em;
+            left: -39.7em;
+            display: flex;
+            flex-direction: column;
+            color: var(--primary-color);
+            position: relative;
+        }
+        .category-container {
+            width: 12em;
+            height: 4em;
+            margin-top: 1em;
+            margin-left: -21.7em;
+        }
+        p {
+            margin-left: -5.9em;
+        }
+        .input-grid {
+            display: grid;
+            grid-template-columns: 180px 180px 180px;
+            grid-gap: .1em;
+            transform: scale(0.7);
+        }
+        .notification-bar {
+            width: 26.1em;
+            margin-left: 3.8em;
+            margin-top: 7em;
+            padding-top: .6em;
+            height: 5.1em;
+            background: #FFF4EA;
+            display: flex;
+        }
+        .error-message {
+            margin-left: -1.2em;
+            margin-top: .1em;
+            font-weight: 500;
+            transform: scale(0.8);
+        }
+        img {
+            height: 1.5em;
+            width: 1.5em;
+            margin-top: .8em;
+            margin-left: .6em;
+        }
+        .dynamic-header {
+            display: flex;
+            margin-top: 5em;
+            margin-left: -2.3em;
+            width: 70em;
+            transform: scale(0.75);
+        }
+        .dynamic-template-text {
+            color: var(--primary-color);
+            margin-left: -21.7em;
+        }
+        .all-template {
+            margin-left: -2.9em;
+        }
+        .loading-text {
+            margin-top: 3em;
+            margin-left: 2.2em;
+            font-weight: bold;
+            transform: scale(0.8);
+        }
+        .template-card {
+            width: 25em;
+            height: 16em;
+            margin-left: 3.6em;
+            margin-top: 3em;
+            border-radius: 5px 5px 25px 25px;
+            margin-bottom: 5em;
+            box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.10);
+        }
+        .template-card-title {
+            padding-top: 1.8em;
+            padding-left: 1.5em;
+            margin-left: -.2em;
+            font-size: 1.6em;
+            font-weight: 500;
+        }
+        .template-card-content {
+            margin-left: -.2em;
+        }
+        .use-template-container {
+            width: 100%;
+            margin-top: 5.3em;
+            height: 2.7em;
+            padding-top: .3em;
+            border-radius: 0px 0px 25px 25px;
+            background-color: #F9F9F9;
+        }
+        .product-list-container {
+            display: grid;
+            grid-template-columns: 200px;
+            grid-gap: 140px;
+            grid-template-rows: 160px 160px 160px 160px 160px 160px 160px 160px;
+            height: 250em;
+        }
+        .pagination-container {
+            display: grid;
+            grid-template-columns: 150px 150px 150px;
+            grid-gap: .001em;
+            position: relative;
+            top: -5em;
+            left: 11em;
+        }
+        .button-one {
+            margin-left: -10em;
+            transform: scale(.8);
+        }
+        .pagination-text {
+            margin-left: -6.5em;
+        }
+        .pagination-text-two {
+            margin-left: -1em;
+            transform: scale(0.8);
+            font-weight: 500;
+        }
     }

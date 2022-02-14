@@ -1,33 +1,28 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useState } from "react-redux";
 
-
-
-function TemplateCard  ()  {
+const TemplateCard = ()  => {
+  
   const templates = useSelector((state) => state.allTemplates.templates);
-  const templateLength= useSelector((state) =>state.allTemplates.templates.length);
 
-  const range = templates.slice(0,10);
-  console.log('firstArray:',range);
-
+  const range = templates.slice(0, 10);
+  console.log("firstArray:", range);
   
 
 
-
-
   const renderTemplateList = range.map((template, index) => {
-    const {    name, description } = template;
+    const { name, description, link} = template;
     return (
-      <div className='template-card' key={index} >
+      <div className='template-card' key={index}>
         <p className='template-card-title'>{name}</p>
         <p className='template-card-content'>{description}</p>
         <div className='use-template-container'>
-          <p className='use-template-text'>{templateLength}</p>
+          <a href={link} className='use-template-text'>Use Template</a>
         </div>
       </div>
     );
   });
-  return (<>{renderTemplateList}</>);
+  return <>{renderTemplateList}</>;
 }
 
 export default TemplateCard;

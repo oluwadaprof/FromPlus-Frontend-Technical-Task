@@ -1,12 +1,38 @@
-import React from "react";
+import React, {useState} from "react";
+import {useSelector} from 'react-redux'
 import { RiSearchLine } from "react-icons/ri";
+import templateSearch from "../redux/utils/templateSearch";
+import useTemplateSearch from "../redux/utils/templateSearch";
+// import useState from 'react'
 
 
-function NavBar() {
+function NavBar () {
+  const templates = useSelector((state) => state.allTemplates.templates);
+  const [query, setQuery] = useState('')
+  const [pageNUmber, setPageNumber] = useState(1)
+
+//  const {template, hasMore, loading, error} = useTemplateSearch(query, pageNUmber);
+
+  function handleSearch(e){
+    setQuery(e.target.value)
+    setPageNumber(1)
+  }
+  // const [inputValue, setInputValue] = useState("");
+
+  // function handleSearch(e) {
+  //   const queryResult = query(e.target.value )
+  //   if(queryResult === templates.category[0]){
+  //     return <div>{templates.category}</div>
+  //   }
+  // }
+  // handleSearch();
+
+ 
+
   return (
     <nav>
       <div className="search-container">
-        <input className='search-input' placeholder='Search Templates' />
+        <input className='search-input' onChange={handleSearch}  placeholder='Search Templates' />
         <RiSearchLine className='search-icon' />
       </div>
       <div className="sort-container">
@@ -15,27 +41,27 @@ function NavBar() {
           <div className="category-container">
             <label>Category</label>
             <select  className="category-input-box">
-              <option id='#ddlProducts' value="">Grapefruit</option>
-              <option value="">Grape</option>
-              <option value="">orange</option>
+              <option id='#ddlProducts' value="health">Grapefruit</option>
+              <option value="e-commerce">Grape</option>
+              <option value="education">orange</option>
             </select>
           </div>
 
           <div className="category-container">
             <label>Order</label>
-            <select className="category-input-box">
-              <option value="">Default</option>
-              <option value="">Grape</option>
-              <option value="">orange</option>
+            <select  className="category-input-box">
+              <option value="health">Default</option>
+              <option value="e-commerce">Grape</option>
+              <option value="education">orange</option>
             </select>
           </div>
          
           <div className="category-container">
             <label>Date</label>
             <select className="category-input-box">
-              <option value="">Default</option>
-              <option value="">Grape</option>
-              <option value="">orange</option>
+              <option value="health">Default</option>
+              <option value="e-commerce">Grape</option>
+              <option value="education">orange</option>
             </select>
           </div>
          
