@@ -35,9 +35,9 @@ function ProductListing() {
 
   console.log("firstArray:", range);
 
-  // if ('health' === range.category){
-  //   console.log('health:',range)
-  // }
+  if ('health' === range.category){
+    console.log('health:',range)
+  }
 
   return (
     <>
